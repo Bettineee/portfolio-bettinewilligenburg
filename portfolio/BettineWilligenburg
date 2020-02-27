@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale">
+      <title>Bettine Willigenburg</title>
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      <link rel="stylesheet" href="https://use.fontawesome.com/release/v5.7.2/css/lL.css" iintegrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+      <link rel="stylesheet" href="main.css">
+   
+      <header>
+         <div class="menu-toggler">
+            <div class="bar half start"></div>
+            <div class="bar"></div>
+            <div class="bar half end"></div>
+         </div>
+         <nav class="top-nav">
+             <ul class="nav-list">
+               <li>
+                  <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li>
+                  <a href="#about" class="nav-link">About</a>
+                </li>
+                <li>
+                  <a href="#start" class="nav-link">Smart Start</a>
+                </li>
+                <li>
+                  <a href="#technology" class="nav-link">Smart Technology</a>
+                </li>
+                <li>
+                  <a href="#connection" class="nav-link">Smart Connection</a>
+                </li>
+                <li>
+                  <a href="#business" class="nav-link">Smart Business</a>
+                </li>
+                <li>
+                  <a href="#project" class="nav-link">Smart Project</a>
+                </li>
+                <li>
+                  <a href="#contact" class="nav-link">Contact</a>
+                </li>
+             </ul>  
+         </nav>
+        <div class="landing-text">
+            <h1>Bettine Willigenburg</h1>
+            <h6>Student Minor Smart Industry</h6>
+        </div>
+     
+      </header>
+
+      <section class="about" id="about">
+         <div class="container">
+               <div class="profile-img">
+                  <img src="images/profile3.jpeg" alt="">
+               </div>
+                  <div class="about-details">
+                     <div class="about-heading">
+                        <h1>About</h1>
+                        <h6>Myself</h6>
+                     </div>
+                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem illo provident aut, 
+                        quisquam velit, cumque odio ad ea culpa, 
+                        aliquam qui nulla est nihil vel tempore sit deleniti architecto repellendus.
+                     </p>
+                     <div class="social-meda">
+                        <ul class="nav-list">
+                           <li>
+                              <a href="#" class="icon-link">
+                                    <i> class="fab fa-facebook-square></i>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#" class="icon-link">
+                                    <i> class="fab fa-twitter-square></i>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                 
+         </div>
+      </section>
+
+      <section class="start" id="start">
+         <div class="container">
+            <div class="section-heading">
+               <h1>Smart Start</h1>
+               <h6>Smart start gaat over...</h6>
+            </div>
+            <div class="my-skills">
+                <div class="skill">
+                    <div class="icon-container">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h1>---</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Ipsam rerum earum aspernatur repudiandae? 
+                        Distinctio officia explicabo maxime in, 
+                        sunt voluptas quo dignissimos. Sint voluptas iure soluta 
+                        rem reiciendis ipsa repellat.</p>
+                </div>
+                <div class="skill">
+                    <div class="icon-container">
+                        <i class="fas fa-code-group"></i>
+                    </div>
+                    <h1>---</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Ipsam rerum earum aspernatur repudiandae? 
+                        Distinctio officia explicabo maxime in, 
+                        sunt voluptas quo dignissimos. Sint voluptas iure soluta 
+                        rem reiciendis ipsa repellat.</p>
+                </div>
+                <div class="skill">
+                    <div class="icon-container">
+                        <i class="fas fa-chart-group"></i>
+                    </div>
+                    <h1>---</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Ipsam rerum earum aspernatur repudiandae? 
+                        Distinctio officia explicabo maxime in, 
+                        sunt voluptas quo dignissimos. Sint voluptas iure soluta 
+                        rem reiciendis ipsa repellat.</p>
+                </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="technology" id="technology">
+        <div class="container">
+           <div class="section-heading">
+              <h1>Smart Technology</h1>
+              <h6>Iets over het vak</h6>
+           </div>
+           <div class="portfolio-item">
+               <div class="portfolio-img">
+                   <img src="images/portitem1.jpeg" alt="">
+               </div>
+               <div class="portfolio-description">
+                   <h6>---</h6>
+                   <h1>----</h1>
+                </div>
+           </div>
+        </div>
+    </section>
+
+    <section class="connection" id="connection">
+        <div class="container">
+           <div class="section-heading">
+              <h1>Smart Connection</h1>
+              <h6>Iets over het vak</h6>
+           </div>
+           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Ipsam rerum earum aspernatur repudiandae? 
+            Distinctio officia explicabo maxime in, 
+            sunt voluptas quo dignissimos. Sint voluptas iure soluta 
+            rem reiciendis ipsa repellat.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Ipsam rerum earum aspernatur repudiandae? 
+            Distinctio officia explicabo maxime in, 
+            sunt voluptas quo dignissimos. Sint voluptas iure soluta 
+            rem reiciendis ipsa repellat.</p>
+
+        </div>
+     </section>
+    
+     <section class="business" id="business">
+        <div class="container">
+           <div class="section-heading">
+              <h1>Smart Business</h1>
+              <h6>Iets over het vak</h6>
+           </div>
+           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Ipsam rerum earum aspernatur repudiandae? 
+            Distinctio officia explicabo maxime in, 
+            sunt voluptas quo dignissimos. Sint voluptas iure soluta 
+            rem reiciendis ipsa repellat.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Ipsam rerum earum aspernatur repudiandae? 
+            Distinctio officia explicabo maxime in, 
+            sunt voluptas quo dignissimos. Sint voluptas iure soluta 
+            rem reiciendis ipsa repellat.</p>
+
+        </div>
+     </section>
+
+     <section class="project" id="project">
+        <div class="container">
+           <div class="section-heading">
+              <h1>Smart Project</h1>
+              <h6>Iets over het vak</h6>
+           </div>
+           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Ipsam rerum earum aspernatur repudiandae? 
+            Distinctio officia explicabo maxime in, 
+            sunt voluptas quo dignissimos. Sint voluptas iure soluta 
+            rem reiciendis ipsa repellat.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Ipsam rerum earum aspernatur repudiandae? 
+            Distinctio officia explicabo maxime in, 
+            sunt voluptas quo dignissimos. Sint voluptas iure soluta 
+            rem reiciendis ipsa repellat.</p>
+
+        </div>
+     </section>
+
+     <section class="contact" id="contact">
+        <div class="container">
+           <div class="section-heading">
+              <h1>Contact</h1>
+              <h6>Iets over het vak</h6>
+           </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Ipsam rerum earum aspernatur repudiandae? 
+                        Distinctio officia explicabo maxime in, 
+                        sunt voluptas quo dignissimos. Sint voluptas iure soluta 
+                        rem reiciendis ipsa repellat.</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Ipsam rerum earum aspernatur repudiandae? 
+                        Distinctio officia explicabo maxime in, 
+                        sunt voluptas quo dignissimos. Sint voluptas iure soluta 
+                        rem reiciendis ipsa repellat.
+                     </p>
+        </div>
+     </section>
+     <footer class="copyright">
+        <div class="up" id="up">
+           <i class="fas fa-chevron-up"></i>
+        </div>
+        <p>&copy;2020 Bettine Willigenburg</p>
+     </footer>
+
+   </head>
+   <body>
+      
+      <script scr="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script scr="main.js"></script>
+
+
+   </body>
+   
+</html>
