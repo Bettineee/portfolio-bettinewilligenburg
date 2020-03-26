@@ -496,7 +496,7 @@
     /*Start media queries*/
     @media screen and (max-width: 768px) {
     body{
-    background: url("images/Achtergrond5.jpeg") no-repeat center fixed;
+    background: url("portfolio/Achtergrond5.jpeg") no-repeat center fixed;
     background-size: cover;
     }
     
