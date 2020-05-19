@@ -211,6 +211,7 @@
     /*End header*/
     
     /*Start about*/
+    
     .about .container{
     display: flex;
     align-items: center;
@@ -417,6 +418,7 @@
     font-size: 1.5rem;
     }
     
+
     input,
     select,
     textarea{
@@ -427,7 +429,15 @@
     outline-color: #d67fb6;
     }
     
-    input[type="verstuur"]{
+button[type="verstuur"]{
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 20px;
+    border: none;
+    outline-color: #d67fb6;
+    }
+
+ button[type="verstuur"]{
     text-align: center;
     text-transform: uppercase;
     background-color: transparent;
@@ -438,14 +448,23 @@
     transition: background-color 650ms;
     }
     
-    input[type="verstuur"]:hover{
-    color: #221e3f;
-    background-color: rgb(255, 231, 233);
-    }
-    	
+button[type="verstuur"]{
+        text-align: center;
+        text-transform: uppercase;
+        background-color: transparent;
+        color: #000000 ;
+        padding: 1rem 2rem;
+        border-radius: .8rem;
+        cursor: pointer;
+        transition: background-color 650ms;
+        }
 
-    
-    
+button[type="verstuur"]:hover{
+            color: #221e3f;
+            background-color: rgb(255, 231, 233);
+            }
+
+    	
     
     /*End Smart Contact*/
     
@@ -496,7 +515,7 @@
     /*Start media queries*/
     @media screen and (max-width: 768px) {
     body{
-    background: url("portfolio/Achtergrond5.jpeg") no-repeat center fixed;
+    background: url("images/background3.jpg") no-repeat center fixed;
     background-size: cover;
     }
     
