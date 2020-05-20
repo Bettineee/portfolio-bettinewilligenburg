@@ -1,0 +1,46 @@
+import utime
+import esp
+
+def switchkaku(pin4, iD9315, state1, repeat):
+    code = ((iD<<6)|int(state)<<4)
+
+    period = 220
+    longperiod = int(period * 1.4)
+
+    # Build the right timings first in a list
+    timings = []
+
+    # Sync |‾|_ _ _ _ _ _ _ _ _ _ _ _
+    timings.append([0, period * 40]) # Skipping the pause between retransmissions could be skipped, but this probably costs more than just waiting for it once.
+    timings.append([1, period])
+    timings.append([0, period * 12])
+
+    # Add all the bits
+    for i in range(31, -1, -1):
+        value = (code & (1<<i)) == (1<<i)
+
+        # 0 |‾|_1.4|‾| _ _ _ _ _ _
+        if value == 0:
+            timings.append([1, period])
+            timings.append([0, longperiod])
+
+        timings.append([1, period])
+        timings.append([0, period * 6])
+
+        # 1 |‾|_ _ _ _ _ _|‾|_ 1.4
+        if value == 1:
+            timings.append([1, period])
+            timings.append([0, longperiod])
+
+    for _ in range(repeat):
+        for k, v in timings:
+            deadline = utime.ticks_add(utime.ticks_us(), v)
+            esp.gpio_matrix_out(pin, 0, k, False)
+            
+            while utime.ticks_diff(deadline, utime.ticks_us()) > 10:
+                pass
+
+        esp.gpio_matrix_out(pin, 0, True, False)
+        utime.sleep_us(period)
+        esp.gpio_matrix_out(pin, 0, False, False)
+
