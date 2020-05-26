@@ -325,7 +325,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
          </p>
          </div>
          <div class="portfolio-img" data-aos="fade-left" data-aos-delay="300">
-            <div class="slideshow-container1">
+            <div class="slideshow-container">
                <!-- Full-width images with number-->
                <div class="mySlides1 fade">
                  <div class="numbertext">1 / 7</div>
@@ -822,3 +822,26 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
 <script src="main.js"></script>
 </body>
 </html>
+
+<script>
+   var slideIndex = [1,1];
+   var slideId = ["mySlides1", "mySlides2"]
+   showSlides(1, 0);
+   showSlides(1, 1);
+   
+   function plusSlides(n, no) {
+     showSlides(slideIndex[no] += n, no);
+   }
+   
+   function showSlides(n, no) {
+     var i;
+     var x = document.getElementsByClassName(slideId[no]);
+     if (n > x.length) {slideIndex[no] = 1}    
+     if (n < 1) {slideIndex[no] = x.length}
+     for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+     }
+     x[slideIndex[no]-1].style.display = "block";  
+   }
+   </script>
+
