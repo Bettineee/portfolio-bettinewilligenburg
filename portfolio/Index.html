@@ -860,11 +860,13 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
 
 <script>
    var slideIndex = [1,1];
-   var slideId = ["mySlides1", "mySlides2"]
+   var slideId = ["mySlides1", "mySlides2"];
    showSlides(1, 0);
    showSlides(1, 1);
    
    function plusSlides(n, no) {
+      console.log("n = ", n);
+      console.log("no = ", no);
      showSlides(slideIndex[no] += n, no);
    }
    
@@ -873,6 +875,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
      var x = document.getElementsByClassName(slideId[no]);
      if (n > x.length) {slideIndex[no] = 1}    
      if (n < 1) {slideIndex[no] = x.length}
+     console.log("length = ", x.length)
      for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";  
      }
