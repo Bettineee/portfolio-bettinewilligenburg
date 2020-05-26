@@ -873,6 +873,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
    function showSlides(n, no) {
      var i;
      var x = document.getElementsByClassName(slideId[no]);
+      console.log("id = ", slideId[no]);
      if (n > x.length) {slideIndex[no] = 1}    
      if (n < 1) {slideIndex[no] = x.length}
      console.log("length = ", x.length)
