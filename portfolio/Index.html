@@ -22,8 +22,11 @@
 <nav class="top-nav">
 <ul class="nav-list">
 <li>
-<a href="#about" class="nav-list">About</a>
+<a href="#about" class="nav-list">Over mij</a>
 </li>
+<li>
+   <a href="#actueel" class="nav-list">Actueel</a>
+   </li>
 <li>
 <a href="#smartstart" class="nav-list">Smart Start</a>
 </li>
@@ -87,7 +90,6 @@
 </div>
 </section>
 
-
 <section class="waarom" id="waarom">
    <div class="container">
    <div class="waarom-details" data-aos="fade-right" data-aos-delay="300">
@@ -102,8 +104,15 @@
    </div>
    </section>
    
-   
-
+   <section class="actueel" id="actueel">
+      <div class="container">
+         <div class="section-heading">
+            <h1>Actueel</h1>
+            <div id="weather">
+               <div id="description"></div>
+               <h1 id="temp"></h1>
+               <div id="location"></div>
+            </section>
 
 <section class="smartstart" id="smartstart">
    <div class="container">
@@ -232,17 +241,19 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
       <img src="SC 4.1.png" alt="">
    </div>
    </div>
-</div>
+
 
 <div class="portfolio-item">
    <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="300">
    <img src="SC 5.0.png" alt="">
    </div>
    <div class="portfolio-description" data-aos="fade-left" data-aos-delay="300">
-   <h1>Visual code</h1>
+   <h1>Visual Studio Code</h1>
    <p>
-   Lorem ipsum dolor sit amet consectetur adipisicing elit.
-   Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Voor het ontwerpen van mijn website heb ik gebruik gemaakt van Visual Studio Code. Dit was mijn eerste ervaring met VSC en ik heb hier dan ook veel moeite mee gehad in het begin.
+Ik heb ook gebruik gemaakt van VSC bij het vak Smart Technologie voor het bouwen van de IOT-schakeling. 
+Door veel met VSC bezig te zijn, youtube video's te bekijken en door hulp van klasgenoten heb ik heel veel geleerd. 
+Ik merk dat ik zelf veel foutjes uit mijn website kan halen en het leuk vind om nieuwe dingen uit te proberen. 
    </p>
    </div>
    </div>
@@ -250,8 +261,10 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
 <div class="portfolio-description has-margin-right" data-aos="fade-right" data-aos-delay="300">
 <h1>Github</h1>
 <p>
-Lorem ipsum dolor sit amet consectetur adipisicing elit.
-Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Om de website vanuit VSC online te krijgen heb ik gebruik gemaakt van Github. Ook Github was totaal nieuw voor mij. 
+Aan het begin was het even zoeken naar alle functies en opties maar ik had het redelijk snel onder de knie. 
+Ik kan gemakkelijk mijn map voor VSC naar Github importeren. Alles staat gelijk goed op de website en ik hoef verder niets aan te passen.
+Wel kan het ulpaden van de bestanden wat langer duren maar verder ging dit allemaal redelijk soepel. 
 </p>
 </div>
 <div class="portfolio-img" data-aos="fade-left" data-aos-delay="300">
@@ -283,6 +296,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
    </div>
    </div>
 </div>
+</div>
 
 </section>
 
@@ -306,22 +320,29 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
    </div>
    <div class="portfolio-item">
       <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="300">
-      <img src="portitem3.jpeg" alt="">
+      <img src="ST 1.1.png" alt="">
       </div>
       <div class="portfolio-description" data-aos="fade-left" data-aos-delay="300">
       <h1>Week 1</h1>
       <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Aan het begin van de les hebben we uitleg gehad over de verschillende onderdelen waarmee we de IoT-schakeling gaan bouwen. 
+         We gaan bijvoorbeeld de lichtintensiteit en de aarde-vochtigheid van een plant meten. We zijn begonnen met de 'IoT Part 1: Preparation of soft- and hardware' op robotexhange.io. 
+         De preperation bevatte vooral het downloaden van de programma's. Hierbij maak je gebruik van je 'Terminal' wanneer je een MacBook hebt. 
+         Dit ging niet bij iedereen gelijk soepel. Na een beetje uitloop is het uiteindelijk gelukt om alles te downloaden en alle stappen te volgen. 
+         Alles is klaar om de volgende les te beginnen met het testen van de sensoren.
       </p>
       </div>
       </div>
       <div class="portfolio-item">
          <div class="portfolio-description has-margin-right" data-aos="fade-right" data-aos-delay="300">
-         <h1>Week 4</h1>
+         <h1>Week 2</h1>
          <p>
-         Lorem ipsum dolor sit amet consectetur adipisicing elit.
-         Lorem ipsum dolor sit amet consectetur adipisicing elit.
+       Aan de hand van modules op robotexhange.io gaan we door de Smart Technologie lessen heen. De tweede les ging over 'IoT Part 2: LEDs & Sensors'.
+       Ik maak gebruik van een breadboard waarop ik mijn sensoren ga testen. Op het breadboard wordt de ESP geplaatst die verbonden is met de laptop.
+       De basis is het testen van het ledje. De stroom stroomt alleen van positief naar negatief daarom is de anderkant van het ledje ongelijk om dit verschil aan te tonen.
+       Deze moet verbonden zijn met de ground (GND) en een weerstand (R1) om de spanning die door het ledje stroomt te beperken. De weerstand verbindt je met een pin. 
+       Deze pin voer je in in de code van robotexhange in VSC zodat het ledje gaat branden. Je doet dit hetzelfde voor de LDR sensor, Moisture sensor en de DHT sensor. 
+       De Moisture en DHT sensor hebben geen weerstand nodig maar worden verbonden met de 3v3.
          </p>
          </div>
          <div class="portfolio-img" data-aos="fade-left" data-aos-delay="300">
@@ -367,16 +388,18 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
          </div>
          </div>
          </div>
-</div>
+
       <div class="portfolio-item">
          <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="300">
          <img src="ST 2.1.jpg" alt="">
          </div>
          <div class="portfolio-description" data-aos="fade-left" data-aos-delay="300">
          <h1>Week 3</h1>
-         <p>
-         Lorem ipsum dolor sit amet consectetur adipisicing elit.
-         Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         <p> In week 3 beginnen we met de 'Programming the KlikAanKlikUit' van robotexhange. Ik heb een schakeling gekregen die ik tussen de stekker van een lampje en een stopcontact kan doen.
+            In deze les gaan we de klik-aan-klik-uit schakeling zo programmeren dat deze automatisch aangaat wanneer we dit willen. 
+            Je kunt een timer inschakelen op de schakeling zodat de plant voldoende licht krijgt. Bij deze stekker hoorde een sensor. 
+            Deze plaatste je op je breadboard en verbond deze met de GND, VCC en een pin. Wanneer je deze pin en het ID van de stekker in de code invoerde moest de klik-aan-klik-uit werken.
+            Wanneer je de klik-aan-klik-uit hoorde klikken wist je dat deze het deed. 
          </p>
          </div>
          </div>
@@ -385,8 +408,10 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
             <div class="portfolio-description has-margin-right" data-aos="fade-right" data-aos-delay="300">
             <h1>Week 4</h1>
             <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              In week 4 zijn we verder gegaan met 'IoT Part 3: Smartphone Dashboard and RF communication'. We moesten de 'Blynk' app downloaden en hierop een nieuw project aanmaken.
+              De 'Blynk' app gebruiken we voor het inzien van de gegevens van de IOT-schakeling. Door de verschillende senoren te koppelen aan een V- code in de app zijn deze met elkaar verbonden.
+              Wanneer je de code voor de sensor gebruikt stuurt deze ook de gegevens naar de app en kun je deze hier uitlezen. Tijdens deze les heb ik de app getest met de LDR sensor.
+
             </p>
             </div>
             <div class="portfolio-img" data-aos="fade-left" data-aos-delay="300">
@@ -417,7 +442,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
                    </div>
             </div>
             </div>
-            </div>
+
   
    <div class="portfolio-item">
       <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="300">
@@ -426,8 +451,13 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
       <div class="portfolio-description" data-aos="fade-left" data-aos-delay="300">
       <h1>De IOT-schakeling</h1>
       <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Helaas konden de Smart Technology lessen door corona niet meer doorgaan. Als vervanging zijn er nog twee extra lessen geweest voor het bouwen van de IOT-schakeling. 
+    Ik heb deze gelukkig thuis uiteindelijk volledig in elkaar kunnen zetten met behulp van de online lessen en klasgenoten. 
+    Het ledje, de LDR, de Moisture sensor, de LDR sensor, de DHT sensor en de klik-aan-klik-uit had ik al eerder op mijn breadboard gemaakt. Deze kon ik er makkelijk weer opzetten. 
+    Hierbij had ik een klein fouthe gemaakt door een verkeerde pin te gebruiken. Niet alle pinnen kunnen gebruikt worden een overzicht hiervan staat op robotexhange.
+    Het Relay had ik nog niet eerder aangesloten en ook niet het batterij doosje en de pomp. Hier heb ik gelukkig wat hulp bij gekregen van een klasgenoot.
+    De Relay gaat weer in de GND, VCC en een pin. Aan de andere kant van de Relay worden de pomp en het batterij doosje bevestigd. 
+    Het zwarte draadje van het batterij doosje gaat in de 'COM' en het zwarte draadje van de pomp gaat in de 'NO'.
       </p>
       </div>
       </div>
@@ -515,8 +545,10 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   <div class="portfolio-description has-margin-right" data-aos="fade-right" data-aos-delay="300">
                   <h1>De PCB</h1>
                   <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Een aantal weken na het bouwen van de PCB in 'Eagle' heb ik het print plaatje in de post gekregen. 
+                     Alle sensoren kloppen de draadjes lopen goed. Ik heb bovenaan mijn naam gezet zodat het echt mijn eigen ontwerp zou zijn. Ook heb ik de sensoren en pinnen die ik gebruikt heb een naam gegeven.
+                     Dit helpt bij het vinden van de juiste plek van de sensoren voor het solderen. Hier rechts zie je mijn PCB nog zonder de sensoren.
+                     Bij de PCB hebben we een aantal headers gekregen. Deze konden we gebruiken voor het solderen van de IOT-schakeling. 
                   </p>
                   </div>
                   <div class="portfolio-img" data-aos="fade-left" data-aos-delay="300">
@@ -553,9 +585,10 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
                            </div>
                            <div class="portfolio-description" data-aos="fade-left" data-aos-delay="300">
                            <h1>Cursus python voor beginners</h1>
-                           <p>
-                           Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                           Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                           <p> Python was voor de minor helemaal nieuw voor mij. Ik had dan aan het begin ook moeite met het gebruik hiervan tijdens het bouwen van de IOT-schakeling.
+                              Samen met een aantal andere klasgenoten hebben we daarom een groep aangemaakt in Whatsapp en Discord waarin we elkaar hier mee kunnen helpen. 
+                              Zo ook hebben we samen een Python cursus voor beginners gekeken en geëvalueerd. Hierbij was ook student aanwezig die veel ervaring heeft met Python zodat hij onze vragen kon beantwoorden.
+                              We vonden dit een hele fijne manier van leren en elkaar helpen. We hebben elkaar dan ook tijdens het bouwen van de IOT-schakeling veel geholpen door met elkaar af te spreken in Discord of Microsoft Teams.
                            </p>
                            </div>
                            </div>
@@ -563,40 +596,54 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 <div class="portfolio-item">
                         <div class="portfolio-description has-margin-right" data-aos="fade-right" data-aos-delay="300">
                         <h1>Rapidpro beurs</h1>
-                        <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </p>
+                        <p> Op 5 maart 2020 zijn we met de klas naar de Rapidpro beurs gegaan in Veldhoven. Deze beurs presenteert het complete Digitale Productie ecosysteem.
+                        Er waren verschillende bedrijven met hun 3D printers om deze te promoten aan bedrijven. Ook waren er sinds dit jaar bedrijven die de mogelijkheden van 'gieten' als alternatief voor 3D printing lieten zien. 
+                        <p> Ik vond dit een hele interessante dag. Ik had mijzelf nog niet eerder verdiept in het 3D printen en veel was dan ook nieuw voor mij.
+                           Ik was bekend met het concept maar had geen idee van de technieken die er achter zitten, de verschillende materialen je kan gebruiken en vooral de verschillende dingen die je er mee kan maken.
+                           Ik was dan ook onder de indruk van hoe veel er tegenwoordig al met 3D printen gedaan kan worden. Het bijzonderste vond ik de de 3D printer die gebruik maakte van klei als materiaal. Met deze machine kan je zelf voedsel 3D printen.
+                        Zolang de substantie maar enigszins lijkt op die van klei kan je het gebruiken. Het is goed om de 3D printer ook vanuit het business perspectief te bekijken.
+                     De 3D printer is vaak niet heel efficient voor massaproductie maar wel voor unieke producten. </p>
                         </div>
                         <div class="portfolio-img" data-aos="fade-left" data-aos-delay="300">
-                        <img src="" alt="">
+                        <img src="ST Rapidpro.jpeg" alt="">
                         </div>
                         </div> 
+
                     <div class="portfolio-item">
-                           <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="300">
-                           <img src="" alt="">
-                           </div>
-                           <div class="portfolio-description" data-aos="fade-left" data-aos-delay="300">
+                     <div class="portfolio-mov has-margin-right" data-aos="fade-right" data-aos-delay="300">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/9cJJZDolul4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                       </div>
+                           <div class="portfolio-description" data-aos="fade-right" data-aos-delay="300">
                            <h1>Vormvrij 3D</h1>
                            <p>
-                           Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                           Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                           Op de Rapidpro beurs kregen we de opdracht om een groepje samen te stellen. Met dit groepje koos je een bedrijf en 3D printer.
+                           Wij kozen voor het bedrijf Vormvrij 3D met de Lutum 4 Clay printer. Dit omdat het printen met klei voor ons nieuw was en we hier graag meer van wilde weten.
+                           De opdracht was het maken van een presentatie waarin we een aantal vragen moesten beantwoorden over ons gekozen product. 
+                           Tijdens de beurs hebben we veel foto's en video's gemaakt en vragen gesteld aan het personeel. Door dit te combineren met informatie van het internet hebben we een mooie presentatie kunnen maken.
+                           Ik vond het printen van klei een interessante nieuwe ontwikkeling met een aantal voor- en nadelen. Deze en meer informarie vind je in de video hiernaast.
                            </p>
                            </div>
                            </div>
+
+                  
                         
                          <div class="portfolio-item">
                               <div class="portfolio-description has-margin-right" data-aos="fade-right" data-aos-delay="300">
-                              <h1>3D printen lessen</h1>
+                              <h1>3D print lessen</h1>
                               <p>
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                             Na het bouwen van ons eigen PCB bord via 'Eagle' zouden we deze mooi afmaken middel van 3D printen. De bedoeling was een doosje te printen voor om de IOT-schakeling heen.
+                             Helaas kon deze workshop door de huidige omstandigheden omtrent Covid-19 niet doorgaan. Als vervanging hiervoor hebben we 4 interessante lessen gehad van Harold Cremer over de theorie achter 3D printen.
+                             In deze lessen kwam de basis van 3D printen aan bod en een stukje verdieping. Per groepje mochten we onze presentaties presenteren aan elkaar van de Rapidpro beurs.
+                             Hier gaf Harold dan ook zijn feedback op en vertelde meer over het product en de gebruikte techniek. Ik vond de lessen zeker interessat en heb hier veel van geleerd.
+                             Omdat ik nog heel weinig kennis had van 3D printen was het voor mij persoonlijk soms iets te veel verdieping waardoor ik moeite had met de stof. Ik heb na deze lessen wel het gevoel dat ik de basis kennis van 3D printen bgrijp.
+                             Met deze kennis hebben we een vervangende opdracht gekregen om toe te passen op ons project bedrijf.
                               </p>
                               </div>
                               <div class="portfolio-img" data-aos="fade-left" data-aos-delay="300">
-                              <img src="" alt="">
+                              <img src="ST 3D lessen.jpg" alt="">
                               </div>
                               </div> 
+
                               <div class="portfolio-item">
                                  <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="300">
                                  <img src="" alt="">
@@ -610,6 +657,8 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                  </div>
                                  </div>
                               </div>
+   </div>
+</div>
    </section>
    
 
@@ -617,7 +666,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
 <div class="container">
 <div class="section-heading">
 <h1>Smart Business</h1>
-</div>
+
 <div class="my-skills">
    <div class="skill">
        <div class="icon-container">
@@ -633,7 +682,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
          voor de positie van de organisatie in de keten (SB22)	.</p>
    </div>
 </div>
-   </div>
+
 
 <div class="portfolio-item">
    <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="300">
@@ -683,7 +732,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
       <img src="SB 1.4.jpeg" alt="">
    </div>
    </div>
-</div>
+
 <div class="portfolio-item">
    <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="300">
    <img src="" alt="">
@@ -709,7 +758,8 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
       </div>
       </div>
    </div>
-   
+</div>
+</div>
    </section>
    
 
@@ -751,6 +801,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
        <p>Competentie: Samenwerken / Netwerken</p>
        <p> Doel 5: Ontwikkelt een professioneel netwerk (SP82).</p>
    </div>
+</div>
 </section>
 
 <section class="contact" id="contact">
@@ -837,5 +888,34 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
      x[slideIndex[no]-1].style.display = "block";  
    }
    </script>
+   <script lang="text/javascript">
+
+      // future javascript
+      function weatherBalloon( cityID ) {
+      var key = '107ea02bd1959b699c08eec008430a39';
+      fetch('https://api.openweathermap.org/data/2.5/weather?id=' + cityID+ '&appid=' + key)  
+      .then(function(resp) { return resp.json() }) // Convert data to json
+      .then(function(data) {
+        drawWeather(data);
+      })
+      
+      .catch(function() {
+        // catch any errors
+      });
+    }
+    
+    window.onload = function() {
+      weatherBalloon(2750053);
+    }
+    function drawWeather( d ) {
+     var celcius = Math.round(parseFloat(d.main.temp)-273.15);
+     var fahrenheit = Math.round(((parseFloat(d.main.temp)-273.15)*1.8)+32); 
+     
+     document.getElementById('description').innerHTML = d.weather[0].description;
+     document.getElementById('temp').innerHTML = celcius + '&deg;';
+     document.getElementById('location').innerHTML = d.name;
+  }
+    </script>
+
 </body>
 </html>

@@ -375,11 +375,21 @@
     .portfolio-item :last-child{
     margin-bottom: 0;
     }
+
+    .portfolio-mov{
+        display: flex;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0rem;
+        }
     
     .portfolio-description{
         align-content: left;
         text-align: left;
+        max-width: 50%;
     }
+
     .portfolio-description h1{
     font-size: 2.5rem;
     text-transform: uppercase;
@@ -455,7 +465,7 @@
   }
   .prev{
       left: 0;
-      border-radius: 3px 0 0 3px;
+      border-radius: 3px 0 0 3p;
   }
   
   /* On hover, add a grey background color */
