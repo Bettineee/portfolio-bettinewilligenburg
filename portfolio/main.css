@@ -483,6 +483,10 @@
     display: none;
   }
 
+  .mySlides3 {
+    display: none;
+  }
+
 /* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
