@@ -31,10 +31,22 @@
     
     a{
     text-decoration: none;
-    color: #000000;
+    color: black;
+    text-decoration: underline;
     
     }
-    
+
+    a:hover{
+      text-decoration:none;
+      color: rgb(87,211,211);
+      text-decoration: underline;
+  }
+
+  a:focus{
+    outline:none;
+    text-decoration:none;
+}
+
     p{
     font-size: 1.8rem;
     font-weight: 300;
@@ -219,7 +231,59 @@
     /*End header*/
     
     /*Start about*/
-    
+    /* API*/
+.API{
+  max-width: 550px;
+  float: left;
+  margin-right: 250px;
+}
+#maintitle {
+  color: #121312;
+}
+
+
+
+#title{
+font-family:'Overpass', sans-serif;
+font-size: 15px;
+color: rgb(10, 10, 10);
+}
+#Date{
+  font-family: 'Overpass', sans-serif;
+  font-size: 15px;
+  color: rgb(8, 8, 8);
+}
+#date{
+  font-family: 'Overpass', sans-serif;
+  font-size: 15px;
+  color: rgb(3, 3, 3);
+}
+
+
+
+#explanation {
+  font-family: 'Overpass', sans-serif;
+  font-size: 12px;
+  color: rgb(7, 7, 7);
+}
+
+#weather{
+  margin-left: 100px;
+  margin-bottom: 900px;
+  margin-top: 250px;
+  font-size: 30px;
+}
+#temp {
+  color: rgb(87,211,211);
+}
+
+.weather {
+  color: rgb(20, 19, 19);
+ text-align: center;
+ 
+}
+
+
     .profile-img{
         width: 50rem;
         flex: 1;
@@ -548,9 +612,10 @@
     }
     
     form label{
-    font-size: 1.5rem;
+    font-size: 1.8 rem;
+    font-family: 'The Historia Demo', sans-serif;
     }
-    
+   
 
     input,
     select,

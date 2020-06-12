@@ -57,4 +57,28 @@ $(document).ready(function () {
       }
       x[slideIndex[no]-1].style.display = "block"; 
     }
+
+    /* NASA API */
+    var req = new XMLHttpRequest();
+    var url = "https://api.nasa.gov/planetary/apod?api_key=";
+    var api_key = "qomA8JjbBvG5gqeF6YdrmPbTfefBtIJb91Cv0WGe";
+    var hd = "&hd=true";
+
+ 
+
+
+    req.open("GET", url + api_key + hd);
+    req.send();
+
+ 
+
+    req.addEventListener("load", function(){
+    if(req.status == 200 && req.readyState == 4){
+      var response = JSON.parse(req.responseText);
+    document.getElementById("title").textContent = response.title;
+    document.getElementById("date").textContent = response.date;
+    document.getElementById("pic").src = response.hdurl;
+    document.getElementById("explanation").textContent = response.explanation;
+  }
+})
     
